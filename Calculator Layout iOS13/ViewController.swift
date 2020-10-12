@@ -21,11 +21,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var zeroButton: UIButton!
     @IBOutlet weak var pointButton: UIButton!
     @IBOutlet weak var manualButton: UIButton!
+    @IBOutlet weak var calcLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         roundButton()
     }
+    
+    var firstNumber: Double = 0
+    var secondNumber: Double = 0
+    var operation = 0
+    var performingMath = false
+    
+    //MARK: - IBAction
+    
+    @IBAction func equalPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        
+    }
+    
+    
     
     //MARK: - Custom Methods
     func roundButton(){
@@ -40,4 +58,5 @@ class ViewController: UIViewController {
             button.layer.cornerCurve = .continuous
         }
     }
+    
 }
